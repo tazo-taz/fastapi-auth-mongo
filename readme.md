@@ -13,3 +13,13 @@
 11. Create login endpoint, it will have userLogin class(email,password), first it should validate user existance, create access_token, token should be 30min and should take userId and then set cookie to response, cookie name and expire cookie should be in settings
 12. Create logout endpoint, which will remove cookie
 13. Create me enpoint, which will returns user
+
+
+
+# How to install dependencies
+python -m venv .venv; source .venv/Scripts/activate; pip install -r requirements.txt
+
+
+
+# How to start project
+source .venv/Scripts/activate && python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
